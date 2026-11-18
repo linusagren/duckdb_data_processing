@@ -226,3 +226,6 @@ __marimo__/
 *.wal
 *.tmp/
 *.duckdb*
+
+# Notes
+notes.md
