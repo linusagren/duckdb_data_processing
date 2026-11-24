@@ -1,0 +1,2 @@
+ALTER TABLE databases.sql
+ADD COLUMN learnt BOOLEAN DEFAULT FALSE;

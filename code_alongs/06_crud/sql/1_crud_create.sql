@@ -1,0 +1,95 @@
+INSERT
+	INTO
+	databases.sql (word,
+	meaning)
+VALUES 
+('DuckDB',
+'An in-process SQL OLAP database management system designed for fast analytical queries.'),
+('Sequence',
+'A database object that generates a sequence of unique numbers, typically used for auto-incrementing columns.'),
+('VARCHAR',
+'A variable-length character data type that stores text strings of varying lengths.'),
+('TIMESTAMPTZ',
+'A data type that stores both date and time, including time zone information.'),
+('ARRAY',
+'A data type in DuckDB that allows for the storage of ordered collections of elements of the same type.'),
+('CREATE TABLE',
+'A SQL statement used to define a new table in DuckDB.'),
+('DROP SCHEMA',
+'A SQL statement used to remove a schema and all its contained objects like tables.'),
+('AUTO_INCREMENT',
+'In DuckDB, achieved by using sequences to automatically generate unique values for an ID column.'),
+('pg_catalog',
+'A schema in DuckDB that stores system tables and metadata about the database objects.'),
+('INFORMATION_SCHEMA',
+'A set of views in DuckDB that provides information about the database metadata such as tables, columns, and data types.');
+
+
+
+INSERT INTO databases.vectordb (word, meaning) VALUES
+('Embedding', 'A dense numerical vector representation of data (text, image, audio) that captures semantic meaning.'),
+('Vector', 'An ordered list of numbers representing a point in a multi-dimensional space.'),
+('Dimensionality', 'The number of components in a vector, e.g., 768 or 1536 dimensions.'),
+('Cosine Similarity', 'A metric measuring the cosine of the angle between two vectors, indicating directional similarity.'),
+('Euclidean Distance', 'The straight-line (L2) distance between two points in vector space.'),
+('Dot Product', 'A similarity measure computed by summing the products of corresponding vector components.'),
+('Manhattan Distance', 'The L1 distance, calculated as the sum of absolute differences between vector components.'),
+('Nearest Neighbor Search', 'Finding the vectors in a dataset that are closest to a given query vector.'),
+('Approximate Nearest Neighbor (ANN)', 'A family of algorithms that trade a small amount of accuracy for much faster similarity search.'),
+('k-NN', 'k-Nearest Neighbors: retrieves the top k most similar vectors to a query.'),
+('HNSW', 'Hierarchical Navigable Small World: a graph-based ANN index offering high recall and speed.'),
+('IVF', 'Inverted File Index: partitions vectors into clusters and searches only the most relevant ones.'),
+('Product Quantization', 'A compression technique that splits vectors into subvectors and quantizes each to reduce memory usage.'),
+('Index', 'A data structure that accelerates vector similarity queries.'),
+('Recall', 'The fraction of true nearest neighbors that a search returns; a key measure of ANN accuracy.'),
+('Semantic Search', 'Search based on meaning and context rather than exact keyword matching.'),
+('RAG', 'Retrieval-Augmented Generation: enhancing LLM responses with relevant documents retrieved from a vector database.'),
+('Chunking', 'Splitting large documents into smaller pieces before embedding and storing them.'),
+('Metadata Filtering', 'Restricting vector search results using structured attributes such as date or category.'),
+('Hybrid Search', 'Combining vector similarity search with keyword (e.g., BM25) search for better relevance.');
+
+
+INSERT INTO programming.python (word, meaning) VALUES
+('List', 'A mutable, ordered collection of items defined with square brackets.'),
+('Tuple', 'An immutable, ordered collection of items defined with parentheses.'),
+('Dictionary', 'A mutable collection of key-value pairs defined with curly braces.'),
+('Set', 'An unordered collection of unique elements.'),
+('Decorator', 'A function that wraps another function to extend or modify its behavior.'),
+('Generator', 'A function that uses yield to produce values lazily, one at a time.'),
+('List Comprehension', 'A concise syntax for creating lists from iterables, e.g., [x*2 for x in range(5)].'),
+('Lambda', 'An anonymous, single-expression function defined with the lambda keyword.'),
+('Context Manager', 'An object that manages setup and cleanup via the with statement.'),
+('GIL', 'Global Interpreter Lock: a mutex in CPython that allows only one thread to execute Python bytecode at a time.'),
+('PEP 8', 'The official style guide for writing readable Python code.'),
+('Virtual Environment', 'An isolated Python environment with its own packages, created with venv or virtualenv.'),
+('pip', 'The standard package installer for Python.'),
+('Module', 'A single Python file containing definitions and statements that can be imported.'),
+('Package', 'A directory of Python modules, typically containing an __init__.py file.'),
+('Class', 'A blueprint for creating objects, bundling data and behavior together.'),
+('Dunder Method', 'A special method with double underscores, like __init__ or __str__, that customizes object behavior.'),
+('*args and **kwargs', 'Syntax for accepting variable numbers of positional and keyword arguments in a function.'),
+('Exception Handling', 'Managing runtime errors using try, except, else, and finally blocks.'),
+('Type Hint', 'Optional annotations that indicate the expected types of variables, parameters, and return values.');
+
+
+INSERT INTO programming.cpp (word, meaning) VALUES
+('Pointer', 'A variable that stores the memory address of another variable.'),
+('Reference', 'An alias for an existing variable, declared with &.'),
+('RAII', 'Resource Acquisition Is Initialization: tying resource lifetime to object lifetime for automatic cleanup.'),
+('Smart Pointer', 'A wrapper class (unique_ptr, shared_ptr, weak_ptr) that automatically manages dynamic memory.'),
+('Template', 'A feature enabling generic programming by writing code that works with any data type.'),
+('STL', 'Standard Template Library: a collection of generic containers, iterators, and algorithms.'),
+('Namespace', 'A scope that groups identifiers to prevent naming conflicts.'),
+('Constructor', 'A special member function called automatically when an object is created.'),
+('Destructor', 'A special member function called when an object is destroyed, used to release resources.'),
+('Virtual Function', 'A member function that can be overridden in derived classes and resolved at runtime.'),
+('Polymorphism', 'The ability to treat objects of different derived classes through a common base interface.'),
+('Inheritance', 'A mechanism where a class acquires properties and behaviors from a base class.'),
+('Move Semantics', 'A C++11 feature that transfers resources from temporary objects instead of copying them.'),
+('Lvalue and Rvalue', 'Lvalues have persistent addresses; rvalues are temporary values, central to move semantics.'),
+('const', 'A qualifier that marks a variable, parameter, or method as immutable.'),
+('Lambda Expression', 'An inline anonymous function object, e.g., [](int x){ return x * 2; }.'),
+('auto', 'A keyword that lets the compiler deduce a variable''s type from its initializer.'),
+('constexpr', 'A specifier indicating a value or function can be evaluated at compile time.'),
+('Header File', 'A file (usually .h or .hpp) containing declarations shared across source files.'),
+('Undefined Behavior', 'Code whose behavior is not specified by the C++ standard, potentially causing crashes or unpredictable results.');
